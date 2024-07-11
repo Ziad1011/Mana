@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none;"> <span>SoleMate</span></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <!-- <li><a href="#">Sale and Offers</a></li>
+          <li><a href="#">Testimonials</a></li> -->
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <select>
+          <option value="all">All</option>
+        </select>
+        <input type="text" placeholder="Search Product">
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="login.html"> <button class="user-button"><i class="fa-solid fa-user"></i></button>
+        </a> <button class="cart-button"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
+    <div class="cart-slider" id="cartSlider">
+      <!-- Cart content goes here -->
+    </div>
+  </header>
+
+
+  <!--===============AUTO SLIDER ===============-->
+  <div style="display: flex; justify-content: center; padding: 80px 0px;">
+    <div class="slide-container">
+
+      <div class="slides">
+        <img src="assets/img/man-posing-stairs-while-wearing-athletic-wear.jpg" class="photo active">
+        <img src="assets/img/man-athletic-wear-posing-stairs-outdoors.jpg" class="photo">
+        <img src="assets/img/man-athletic-wear-posing-stairs-outside.jpg" class="photo">
+        <!-- <img src="assets/photo/sign-wall-says-no-coffee-it.jpg" class="photo">
+        <img src="assets/photo/unique-collection-coffee-cups.jpg" class="  photo"> -->
+      </div>
+
+      <div class="buttons">
+        <span class="next">&#10095;</span>
+        <span class="prev">&#10094;</span>
+      </div>
+
+      <div class="dotsContainer">
+        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        <!-- <div class="dot" attr='3' onclick="switchImage(this)"></div>
+        <div class="dot" attr='4' onclick="switchImage(this)"></div> -->
+      </div>
+    </div>
+  </div>
+  <!--=============== END AUTO SLIDER ===============-->
+
+
+
+  <!--=============== WHY US ===============-->
+  <div class="section">
+    <h2>Why Us</h2>
+    <div class="line"></div>
+    <p class="description"><!--=============== END WHY US===============-->
+
+      Welcome to Mana, where innovation meets performance in sportswear. At Mana, we are passionate about empowering
+      athletes and fitness enthusiasts to achieve their highest potential. Founded with a vision to blend style,
+      comfort, and cutting-edge technology, Mana offers a wide range of sports clothing designed to meet the rigorous
+      demands of today's active lifestyle.
+
+      Our commitment to quality and excellence drives us to continually push the boundaries of athletic wear. Each piece
+      in our collection is crafted with precision, using high-performance fabrics that provide optimal support,
+      breathability, and durability. Whether you’re hitting the gym, running a marathon, or practicing yoga, Mana’s
+      apparel is engineered to enhance your performance and keep you comfortable throughout your workout.
+
+      At Mana, we believe that sports and fitness are more than just activities – they are a way of life. We are
+      dedicated to supporting your journey, from start to finish, with clothing that inspires confidence and enables you
+      to move freely. Join the Mana community and experience the perfect fusion of functionality and fashion in
+      sportswear.
+
+      Mana - Elevate your game.
+
+
+
+
+    </p>
+  </div>
+  <!--=============== END WHY US===============-->
+
+
+  <div class="testimonial-section" style="padding-top: 80px; padding-bottom: 50px;" data-aos="zoom-in">
+    <h2>What our clients say
+    </h2>
+    <div class=" testimonial-slider">
+      <span class="prev-btn">&#10094;</span>
+      <div class="testimonial">
+        <div class="testimonial-item active">
+          <p class="testimonial-text">"I’ve tried many sports brands, but Mana truly stands out. The quality of their
+            clothing is top-notch, and the comfort is unparalleled. Whether I’m running or lifting weights, Mana gear
+            never lets me down. Highly recommended!"</p>
+          <!-- <p class="testimonial-author">Sam Fletcher, Partner - The Barista</p> -->
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-text">"As an avid cyclist, I need clothing that can withstand long rides and varying
+            weather conditions. Mana’s cycling jerseys and shorts are perfect. They provide excellent support and keep
+            me cool even during intense workouts. I’m a fan for life!"</p>
+          <!-- <p class="testimonial-author">Jane Doe, Owner - Coffee House</p> -->
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-text">"I’ve been wearing Mana’s sports bras and leggings for my CrossFit workouts, and
+            they are amazing. They provide great support and flexibility, which is exactly what I need. The vibrant
+            colors and stylish designs are a bonus!"</p>
+          <!-- <p class="testimonial-author">John Smith, Manager - Coffee Corner</p> -->
+        </div>
+      </div>
+      <span class="next-btn">&#10095;</span>
+    </div>
+  </div>
+
+
+
+
+  <!-- <section class="product-section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="product-card left">
+      <img src="assets/images/tshirt_yellow.png" alt="Product Image">
+      <div class="product-info">
+        <p> <a href="mailto:Info@aldawlia.online" style="color: black; font-size: 18px;">Info@aldawlia.online</a></p>
+      </div>
+    </div>
+    <div class="product-card right">
+      <h2>الاسلام</h2>
+      <p>المنتجات الإسلام تقدم لكم الآن أكواب ورقية عالية الجودة، صديقة للبيئة وآمنة للاستخدام في مختلف المناسبات.
+      </p>
+      <button><a href="Products.html" style="color: white;">تسوق الآن</a></button>
+    </div>
+  </section> -->
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="branding">
+        <p class="brand-name">SoleMate</p>
+        <h2>Let’s Help Your Space Come To Life</h2>
+      </div>
+      <div class="footer-links">
+        <div class="resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integration</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Try For Free</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-copyright">
+    <div class="footer-copyright-wrapper">
+      <p class="footer-copyright-text">
+        <a class="footer-copyright-link" href="https://www.facebook.com/fikrahshow1" target="_self"> ©2020. |
+          Designed By: Fikra Show. | All
+          rights
+          reserved. </a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.cart-button').addEventListener('click', function () {
+      document.getElementById('cartSlider').classList.toggle('open');
+    });
+
+    document.addEventListener('click', function (event) {
+      const cartSlider = document.getElementById('cartSlider');
+      const cartButton = document.querySelector('.cart-button');
+
+      if (!cartSlider.contains(event.target) && !cartButton.contains(event.target)) {
+        cartSlider.classList.remove('open');
+      }
+    });
+  </script>
+  <script src="assets/js/about.js"></script>
+</body>
+
+</html>

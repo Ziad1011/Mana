@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/product1.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none;"> <span>SoleMate</span></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="product.html">Product</a></li>
+          <!-- <li><a href="#">Sale and Offers</a></li>
+          <li><a href="#">Testimonials</a></li> -->
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <select>
+          <option value="all">All</option>
+        </select>
+        <input type="text" placeholder="Search Product">
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="login.html"> <button class="user-button"><i class="fa-solid fa-user"></i></button>
+        </a> <button class="cart-button"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
+    <div class="cart-slider" id="cartSlider">
+      <!-- Cart content goes here -->
+    </div>
+  </header>
+
+
+  <main role="main">
+    <div class="product">
+      <figure>
+        <img src="https://raw.githubusercontent.com/itbruno/productpreview/master/assets/img/t-shirt.jpg"
+          alt="Product Image" class="product-image">
+      </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1>LOREM IPSUM</h1>
+          <p>
+            Lorem Ipsum is simply dummy
+            printing and typesetting industry
+          </p>
+        </div>
+
+        <div class="price">
+          89
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="buy">
+          <span>BUY ITEM</span>
+        </button>
+
+
+
+        <button class="size">
+          <span> ( S , M , L , XL )</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color black"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="branding">
+        <p class="brand-name">SoleMate</p>
+        <h2>Let’s Help Your Space Come To Life</h2>
+      </div>
+      <div class="footer-links">
+        <div class="resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integration</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Try For Free</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-copyright">
+    <div class="footer-copyright-wrapper">
+      <p class="footer-copyright-text">
+        <a class="footer-copyright-link" href="https://www.facebook.com/fikrahshow1" target="_self"> ©2020. |
+          Designed By: Fikra Show. | All
+          rights
+          reserved. </a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.cart-button').addEventListener('click', function () {
+      document.getElementById('cartSlider').classList.toggle('open');
+    });
+
+    document.addEventListener('click', function (event) {
+      const cartSlider = document.getElementById('cartSlider');
+      const cartButton = document.querySelector('.cart-button');
+
+      if (!cartSlider.contains(event.target) && !cartButton.contains(event.target)) {
+        cartSlider.classList.remove('open');
+      }
+    });
+  </script>
+  <script src="assets/js/product1.js"></script>
+</body>
+
+</html>
